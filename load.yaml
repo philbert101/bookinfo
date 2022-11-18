@@ -35,7 +35,7 @@ spec:
       serviceAccountName: load
       containers:
       - args:
-        - slow_cooker -qps ${QPS} -concurrency ${CONCURRENCY} http://productpage:9080/productpage?u=normal
+        - slow_cooker -qps ${QPS} -concurrency ${CONCURRENCY} http://productpage.bookinfo.svc.cluster.local:9080/productpage?u=normal
         command:
         - /bin/sh
         - -c
